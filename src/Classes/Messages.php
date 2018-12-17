@@ -1,6 +1,6 @@
 <?php
 
-namespace Eelcol\LaravelHelpers;
+namespace Eelcol\LaravelHelpers\Classes;
 
 use Illuminate\Support\Facades\Session;
 

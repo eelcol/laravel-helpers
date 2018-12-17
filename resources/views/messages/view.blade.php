@@ -1,5 +1,5 @@
 @if($errors->any())
-    <div class="alert alert-danger" style="margin: 5px;">
+    <div class="alert alert-danger" style="margin: 5px; margin-bottom: 15px;">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -9,7 +9,7 @@
 @endif
 
 @if(count($Errors) > 0)
-	<div class="alert alert-danger" style="margin: 5px;">
+	<div class="alert alert-danger" style="margin: 5px; margin-bottom: 15px;">
 		@if(count($Errors) == 1)
 			{{ $Errors[0] }}
 		@else
@@ -23,7 +23,7 @@
 @endif
 
 @if(count($Success) > 0)
-	<div class="alert alert-success" style="margin: 5px;">
+	<div class="alert alert-success" style="margin: 5px; margin-bottom: 15px;">
 		@if(count($Success) == 1)
 			{{ $Success[0] }}
 		@else

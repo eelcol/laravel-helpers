@@ -22,28 +22,6 @@ class HelpersServiceProvider extends ServiceProvider
         * Set views dir
         */
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-helpers');
-
-        $this->app->booted(function () {
-            $this->routes();
-        });
-
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-    }
-
-    /**
-     * Register the tool's routes.
-     *
-     * @return void
-     */
-    protected function routes()
-    {
-        if ($this->app->routesAreCached()) {
-            return;
-        }
-
-        //Route::middleware(['nova', Authorize::class])
-        //        ->prefix('nova-vendor/nova-facebook-connect')
-        //        ->group(__DIR__.'/../routes/api.php');
     }
 
     /**
@@ -57,7 +35,7 @@ class HelpersServiceProvider extends ServiceProvider
         * Register singleton: helpers
         */
         $this->app->singleton('Messages', function ($app) {
-            return new \Eelcol\LaravelHelpers\Messages;
+            return new \Eelcol\LaravelHelpers\Classes\Messages;
         });
     }
 }
