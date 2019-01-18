@@ -8,6 +8,12 @@
     </div>
 @endif
 
+@if (session('status'))
+    <div class="alert alert-success" role="alert">
+        {{ session('status') }}
+    </div>
+@endif
+
 @if(count($Errors) > 0)
 	<div class="alert alert-danger" style="margin: 5px; margin-bottom: 15px;">
 		@if(count($Errors) == 1)
