@@ -85,6 +85,6 @@ if(!function_exists('id_in_collection'))
 			return false;
 		}
 
-		return is_null($collection->firstWhere('id', $id));
+		return !is_null($collection->firstWhere('id', $id));
 	}
 }
