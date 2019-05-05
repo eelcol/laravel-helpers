@@ -30,6 +30,7 @@ if(!function_exists('safe_array'))
 {
 	/**
 	* Retrieve a key from an array when not known if the array is set
+	* Usage: safe_array(['test' => ['m' => 'v']], 'test', 'm');
 	*/
 	function safe_array($array, ...$params)
 	{
@@ -53,5 +54,21 @@ if(!function_exists('safe_array'))
 		}
 
 		return $array[$firstParam];
+	}
+}
+
+if(!function_exists('safe_in_array'))
+{
+	/**
+	* Check if a value is in array
+	*/
+	function safe_in_array($val, $array)
+	{
+		if(!is_array($array))
+		{
+			return NULL;
+		}
+
+		return in_array($val, $array);
 	}
 }
