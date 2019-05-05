@@ -72,3 +72,19 @@ if(!function_exists('safe_in_array'))
 		return in_array($val, $array);
 	}
 }
+
+if(!function_exists('id_in_collection'))
+{
+	/**
+	* Check if an id is present in a collection
+	*/
+	function id_in_collection($id, $collection)
+	{
+		if(is_null($collection) || !is_object($collection))
+		{
+			return false;
+		}
+
+		return is_null($collection->firstWhere('id', $id));
+	}
+}

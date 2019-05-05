@@ -7,6 +7,9 @@ safe_array(array, level1, level2, etc)
 - safe_in_array(val, array)
 Check if a value is in array, when you do not know for sure that $array is an array
 
+- id_in_collection(id, collection)
+Check if an ID is present in a Eloquent collection
+
 - error(msg)
 Present an error message
 
