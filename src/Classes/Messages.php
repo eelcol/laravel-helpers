@@ -53,4 +53,20 @@ class Messages {
 		return view("laravel-helpers::messages.view", ['Errors' => $this->errors, 'Success' => $this->success]);
 	}
 
+	/**
+	* Return view
+	*/
+	public function displaySuccess($text)
+	{
+		return view("laravel-helpers::messages.view", ['Success' => [$text]]);
+	}
+
+	/**
+	* Return view
+	*/
+	public function displayError($text)
+	{
+		return view("laravel-helpers::messages.view", ['Errors' => [$text]]);
+	}
+
 }

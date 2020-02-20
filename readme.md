@@ -17,4 +17,12 @@ Present an error message
 Present a success message
 
 - display_messages()
-Display the messages in HTML
+Display the messages in HTML. In Blade, use: {!! display_messages() !!}
+
+- display_success(msg)
+Directly display a message in HTML. In Blade, use: {!! display_success('text') !!}
+
+- display_error(msg)
+Directly display a message in HTML. In Blade, use: {!! display_error('text') !!}
+
+Messages can also be added by setting a session with key 'status'. This message will be printed as a success message.

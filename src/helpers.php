@@ -26,6 +26,22 @@ if(!function_exists('display_messages'))
 	}
 }
 
+if(!function_exists('display_success'))
+{
+	function display_success($text)
+	{
+		return Messages::displaySuccess($text);
+	}
+}
+
+if(!function_exists('display_error'))
+{
+	function display_error($text)
+	{
+		return Messages::displayError($text);
+	}
+}
+
 if(!function_exists('safe_array'))
 {
 	/**
