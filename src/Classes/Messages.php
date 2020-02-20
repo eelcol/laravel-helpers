@@ -58,7 +58,7 @@ class Messages {
 	*/
 	public function displaySuccess($text)
 	{
-		return view("laravel-helpers::messages.view", ['Success' => [$text]]);
+		return view("laravel-helpers::messages.view", ['Success' => [$text], 'Errors' => []]);
 	}
 
 	/**
@@ -66,7 +66,7 @@ class Messages {
 	*/
 	public function displayError($text)
 	{
-		return view("laravel-helpers::messages.view", ['Errors' => [$text]]);
+		return view("laravel-helpers::messages.view", ['Errors' => [$text], 'Errors' => []]);
 	}
 
 }

@@ -14,7 +14,7 @@
     </div>
 @endif
 
-@if(count($Errors) > 0)
+@if(isset($Errors) && count($Errors) > 0)
 	<div class="alert alert-danger" style="margin: 5px; margin-bottom: 15px;">
 		@if(count($Errors) == 1)
 			{{ $Errors[0] }}
@@ -28,7 +28,7 @@
     </div>
 @endif
 
-@if(count($Success) > 0)
+@if(isset($Success) && count($Success) > 0)
 	<div class="alert alert-success" style="margin: 5px; margin-bottom: 15px;">
 		@if(count($Success) == 1)
 			{{ $Success[0] }}
