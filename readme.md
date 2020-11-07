@@ -1,3 +1,11 @@
+# Added macro's
+
+## Uploaded file
+
+- Directly save an uploaded file to the cloud. A new method `saveToCloud` is added to `Illuminate\Http\UploadedFile`.
+
+`string saveToCloud(string $folder, string $disk = null)`
+
 # Helper functions:
 
 - safe_array(array, ...keys)
