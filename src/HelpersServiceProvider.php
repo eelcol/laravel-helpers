@@ -28,7 +28,7 @@ class HelpersServiceProvider extends ServiceProvider
 
             $path = $storage->putFileAs($target_folder, $this, $filename, ['visibility' => 'public']);
 
-            $url = $storage::url($path);
+            $url = $storage->url($path);
 
             // if the url contains the app url
             // remove the app url from the final url
