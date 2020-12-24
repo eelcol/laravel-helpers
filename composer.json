@@ -6,7 +6,9 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=7.1.0"
+        "php": "^7.3.0",
+        "illuminate/support": "^6|^7|^8",
+        "illuminate/http": "^6|^7|^8"
     },
     "autoload": {
         "psr-4": {
@@ -15,6 +17,11 @@
         "files": [
             "src/helpers.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eelcol\\LaravelHelpers\\Tests\\": "tests"
+        }
     },
     "extra": {
         "laravel": {
@@ -27,5 +34,9 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.5"
+    }
 }
