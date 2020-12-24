@@ -38,7 +38,7 @@ if(!function_exists('safe_in_array'))
 	/**
 	* Check if a value is in array
 	*/
-	function safe_in_array($val, $array)
+	function safe_in_array($val, $array): bool
 	{
 		if(!is_array($array))
 		{

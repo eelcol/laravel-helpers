@@ -6,6 +6,8 @@
 
 `string saveToCloud(string $folder, string $disk = null)`
 
+This method returns the URL of the file. When the file is saved to a local disk, a relative path is returned in stead of a complete URL.
+
 # Helper functions:
 
 - safe_array(array, ...keys)
