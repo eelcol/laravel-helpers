@@ -16,7 +16,7 @@ class HelpersServiceProvider extends ServiceProvider
     public function boot()
     {
         // extend the UploadedFile class
-        UploadedFile::macro('saveToCloud', function (string $target_folder, string $disk = null) {
+        UploadedFile::macro('saveToCloud', function (string $target_folder, ?string $disk = null) {
             
             $filename = microtime(true) . "_" . rand(1111, 9999) . "." . $this->clientExtension();
 
